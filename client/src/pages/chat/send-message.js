@@ -20,6 +20,13 @@ const SendMessage = ({ socket, username, room }) => {
         placeholder='Message...'
         onChange={(e) => setMessage(e.target.value)}
         value={message}
+        id="field"
+        onKeyPress={(e) => {
+          var key = e.which || e.keyCode;
+          if (key === 13) { 
+            sendMessage();
+          }
+        } }
       />
       <button className='btn btn-primary' onClick={sendMessage}>
         Send Message
