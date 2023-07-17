@@ -33,9 +33,8 @@
 
 4. In ".env" file add following content:
    
-   HARPERDB_URL="<your instance URL?"
-   
-   HARPERDB_PW="Basic <your instance API Auth Header>"
+   HARPERDB_URL="<your_instance_URL?"
+   HARPERDB_PW="Basic <your_instance_API_Auth_Header>"
    
 6. and save the file
 
