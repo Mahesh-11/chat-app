@@ -32,9 +32,12 @@
 <img width="817" alt="Screenshot 2023-07-18 011541" src="https://github.com/Mahesh-11/chat-app/assets/60313321/9334431a-c1a5-4222-90e1-4d2916991a01">
 
 4. In ".env" file add following content:
+   
    HARPERDB_URL="<your instance URL?"
+   
    HARPERDB_PW="Basic <your instance API Auth Header>"
-5. and save the file
+   
+6. and save the file
 
 That's it now the app is ready
 
