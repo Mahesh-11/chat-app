@@ -3,11 +3,15 @@
 
  #Running the application
  1. Client
-    npm install
-    npm start
- 2. Server
-    npm install
-    npm run dev
+    
+    i. npm install
+    
+    ii. npm start
+ 3. Server
+    
+    i. npm install
+    
+    ii. npm run dev
 
 #Setting up the DB
 1. Create an account at HarperDB (https://studio.harperdb.io/)
