@@ -34,18 +34,18 @@ io.on('connection', (socket) => {
         const { username, room } = data;
         socket.join(room);
 
-        let _createdtime_ = Date.now();
+        let __createdtime__ = Date.now();
 
         socket.to(room).emit('receive_message', {
             message: `${username} has joined the chat room`,
             username: CHAT_BOT,
-            _createdtime_,
+            __createdtime__,
         });
 
         socket.emit('receive_message', {
             message: `Welcome ${username}`,
             username: CHAT_BOT,
-            _createdtime_,
+            __createdtime__,
         });
 
         chatRoom = room;
@@ -55,9 +55,9 @@ io.on('connection', (socket) => {
         socket.emit('chatroom_users', chatRoomUsers);
 
         socket.on('send_message', (data) => {
-            const { message, username, room, _createdtime_ } = data;
+            const { message, username, room, __createdtime__ } = data;
             io.in(room).emit('receive_message', data); // Send to all users in room, including sender
-            harperSaveMessage(message, username, room, _createdtime_) // Save message in db
+            harperSaveMessage(message, username, room, __createdtime__) // Save message in db
               .then((response) => console.log(response))
               .catch((err) => console.log(err));
         });
